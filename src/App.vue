@@ -2,6 +2,10 @@
   <TheHeader>
     <TheNavbar></TheNavbar>
   </TheHeader>
+  <main class="main">
+    <div class="container">
+    </div>
+  </main>
 </template>
 
 <script lang="ts">
