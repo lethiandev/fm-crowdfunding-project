@@ -1,14 +1,14 @@
 <template>
-  <nav class="navbar">
+  <div class="navbar-wrapper">
     <div class="container">
-      <div class="navbar-content">
+      <nav class="navbar">
         <a class="logo" href="#">
           <img src="~@/assets/logo.svg" alt="Crowdfund" />
         </a>
         <slot></slot>
-      </div>
+      </nav>
     </div>
-  </nav>
+  </div>
 </template>
 
 <script lang="ts">
@@ -22,18 +22,19 @@ export default defineComponent({
 <style lang="scss" scoped>
 @use '~@/scss/variables' as vars;
 
+.navbar-wrapper {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,0));
+}
+
 .navbar {
   padding: 48px 0;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,0));
+  display: flex;
+  align-items: center;
+  position: relative;
 
   @media (max-width: vars.$breakpoint-mobile) {
     padding: 32px 0;
   }
-}
-
-.navbar-content {
-  display: flex;
-  align-items: center;
 }
 
 .logo {
