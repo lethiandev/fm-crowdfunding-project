@@ -1,6 +1,17 @@
 <template>
   <header class="header">
     <MainNavbar>
+      <NavbarList>
+        <NavbarListItem>
+          <a href="#">About</a>
+        </NavbarListItem>
+        <NavbarListItem>
+          <a href="#">Discover</a>
+        </NavbarListItem>
+        <NavbarListItem>
+          <a href="#">Started</a>
+        </NavbarListItem>
+      </NavbarList>
     </MainNavbar>
   </header>
 </template>
@@ -8,11 +19,15 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import MainNavbar from './MainNavbar.vue';
+import NavbarList from './NavbarList.vue';
+import NavbarListItem from './NavbarListItem.vue';
 
 export default defineComponent({
   name: 'TheHeading',
   components: {
     MainNavbar,
+    NavbarList,
+    NavbarListItem,
   },
 });
 </script>
