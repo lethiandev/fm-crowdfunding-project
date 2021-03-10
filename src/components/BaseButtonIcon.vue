@@ -32,15 +32,10 @@ export default defineComponent({
 
 .button-icon {
   $padding-y: nth($list: vars.$button-padding, $n: 1);
+  $padding-x: nth($list: vars.$button-padding, $n: 2);
+  padding-left: calc(#{$padding-x} + 4px);
   border-left: solid calc(#{$padding-y} + 0.5em) transparent;
   position: relative;
-
-  // Add left margin to content
-  &::before {
-    content: '';
-    margin-left: 4px;
-    visibility: hidden;
-  }
 }
 
 .icon-wrapper {
