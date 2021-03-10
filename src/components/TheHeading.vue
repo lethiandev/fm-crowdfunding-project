@@ -1,13 +1,19 @@
 <template>
   <header class="header">
+    <MainNavbar>
+    </MainNavbar>
   </header>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import MainNavbar from './MainNavbar.vue';
 
 export default defineComponent({
   name: 'TheHeading',
+  components: {
+    MainNavbar,
+  },
 });
 </script>
 
