@@ -1,6 +1,6 @@
 <template>
-  <div class="navbar-list">
-    <ul class="navbar-list-ul">
+  <div class="navbar-list-wrapper">
+    <ul class="navbar-list">
       <slot></slot>
     </ul>
   </div>
@@ -15,7 +15,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.navbar-list-ul {
+.navbar-list {
   margin: 0;
   padding: 0;
   list-style: none;
