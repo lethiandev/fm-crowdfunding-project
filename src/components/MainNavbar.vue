@@ -2,7 +2,9 @@
   <nav class="navbar">
     <div class="container">
       <div class="navbar-content">
-        <img class="logo" src="~@/assets/logo.svg" alt="Crowdfund" />
+        <a class="logo" href="#">
+          <img src="~@/assets/logo.svg" alt="Crowdfund" />
+        </a>
         <slot></slot>
       </div>
     </div>
@@ -36,6 +38,11 @@ export default defineComponent({
 
 .logo {
   margin-right: auto;
-  max-width: 128px;
+  display: block;
+
+  img {
+    max-width: 128px;
+    display: block;
+  }
 }
 </style>
