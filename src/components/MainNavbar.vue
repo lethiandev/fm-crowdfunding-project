@@ -33,7 +33,7 @@ export default defineComponent({
   position: relative;
 
   @media (max-width: vars.$breakpoint-mobile) {
-    padding: 32px 0;
+    padding: 32px 0 36px 0;
   }
 }
 
