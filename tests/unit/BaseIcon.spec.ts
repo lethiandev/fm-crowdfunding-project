@@ -1,4 +1,3 @@
-import { expect } from 'chai';
 import { ComponentPublicInstance } from 'vue';
 import { shallowMount, VueWrapper } from '@vue/test-utils';
 import BaseIcon from '@/components/BaseIcon.vue';
@@ -19,15 +18,15 @@ describe('BaseIcon.vue', () => {
   });
 
   it('should render <img> element', async () => {
-    expect(wrapper.find('img').exists()).to.be.true;
+    expect(wrapper.find('img').exists()).toBeTruthy();
   });
 
   it('should render <img> element with correct source', async () => {
-    expect(wrapper.find('img').attributes('src')).to.equals(ICON_DEFAULT);
+    expect(wrapper.find('img').attributes('src')).toEqual(ICON_DEFAULT);
   });
 
   it('should update <img> src attribute on prop change', async () => {
     await wrapper.setProps({ icon: ICON_SECOND });
-    expect(wrapper.find('img').attributes('src')).to.equals(ICON_SECOND);
+    expect(wrapper.find('img').attributes('src')).toEqual(ICON_SECOND);
   });
 });
