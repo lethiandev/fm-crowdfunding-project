@@ -1,6 +1,5 @@
 <template>
   <header class="header">
-    <slot></slot>
   </header>
 </template>
 
@@ -8,7 +7,7 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'TheHeader',
+  name: 'TheHeading',
 });
 </script>
 

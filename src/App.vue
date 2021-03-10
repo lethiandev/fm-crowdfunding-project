@@ -1,7 +1,5 @@
 <template>
-  <TheHeader>
-    <TheNavbar></TheNavbar>
-  </TheHeader>
+  <TheHeading />
   <main class="main">
     <div class="container">
     </div>
@@ -11,14 +9,12 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import IconBookmark from './assets/icon-bookmark.svg';
-import TheHeader from './components/TheHeader.vue';
-import TheNavbar from './components/TheNavbar.vue';
+import TheHeading from './components/TheHeading.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    TheHeader,
-    TheNavbar,
+    TheHeading,
   },
   computed: {
     IconBookmark: () => IconBookmark,
