@@ -1,0 +1,10 @@
+@use './variables' as vars;
+
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: vars.$body-font-family;
+  font-size: vars.$body-font-size;
+}
