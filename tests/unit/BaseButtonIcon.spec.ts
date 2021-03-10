@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils';
+import BaseIcon from '@/components/BaseIcon.vue';
 import BaseButtonIcon from '@/components/BaseButtonIcon.vue';
 
 describe('BaseButtonIcon.vue', () => {
@@ -10,5 +11,14 @@ describe('BaseButtonIcon.vue', () => {
     });
 
     expect(wrapper.text()).toEqual(content);
+  });
+
+  it('should pass icon prop to the icon component', () => {
+    const icon = 'test-icon-svg';
+    const wrapper = mount(BaseButtonIcon, {
+      props: { icon },
+    });
+
+    expect(wrapper.findComponent(BaseIcon).props('icon')).toEqual(icon);
   });
 });
