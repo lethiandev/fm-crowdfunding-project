@@ -20,7 +20,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@use '~@/scss/variables' as vars;
+@use '~@/scss/breakpoints' as bp;
 
 .nav {
   margin: 0;
@@ -28,9 +28,17 @@ export default defineComponent({
   list-style: none;
   display: flex;
   align-items: center;
+
+  @include bp.breakpoint-mobile {
+    display: none;
+  }
 }
 
 .nav-burger {
   display: none;
+
+  @include bp.breakpoint-mobile {
+    display: block;
+  }
 }
 </style>
