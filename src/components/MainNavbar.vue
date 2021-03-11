@@ -27,7 +27,7 @@ export default defineComponent({
   );
 
   @include bp.breakpoint-mobile {
-    padding: 32px 0;
+    padding: 32px 0 76px 0;
   }
 }
 

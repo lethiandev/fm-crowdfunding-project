@@ -30,7 +30,7 @@ export default defineComponent({
 
   @include bp.breakpoint-mobile {
     margin: 0;
-    padding: 26.5px 24px;
+    padding: 26px 24px;
     font-size: 1.1em;
     font-weight: 500;
     color: black;

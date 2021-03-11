@@ -50,7 +50,7 @@ export default defineComponent({
 
 .nav-backdrop {
   background-image: linear-gradient(
-    to bottom, rgba(0,0,0,0.75), transparent
+    to bottom, rgba(0,0,0,0.6), transparent
   );
   display: none;
   height: 100vh;
