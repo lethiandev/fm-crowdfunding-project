@@ -21,9 +21,9 @@ export default defineComponent({
 @use '~@/scss/breakpoints' as bp;
 
 .navbar {
-  padding: 48px 0;
+  padding: 48px 0 62px 0;
   background-image: linear-gradient(
-    to bottom, rgba(0,0,0,.75), transparent
+    to bottom, rgba(0,0,0,.6), transparent
   );
 
   @include bp.breakpoint-mobile {
@@ -34,6 +34,7 @@ export default defineComponent({
 .container {
   display: flex;
   align-items: center;
+  max-width: 1108px;
 }
 
 .brand {
