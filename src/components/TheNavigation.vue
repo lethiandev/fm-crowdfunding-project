@@ -2,7 +2,7 @@
   <NavList>
     <NavListItem>About</NavListItem>
     <NavListItem>Discover</NavListItem>
-    <NavListItem>Started</NavListItem>
+    <NavListItem>Get Started</NavListItem>
   </NavList>
 </template>
 

@@ -23,7 +23,8 @@ export default defineComponent({
 .navbar {
   padding: 48px 0;
   background-image: linear-gradient(
-    to bottom, rgba(0,0,0,.5), transparent );
+    to bottom, rgba(0,0,0,.75), transparent
+  );
 
   @include bp.breakpoint-mobile {
     padding: 32px 0;
@@ -38,6 +39,10 @@ export default defineComponent({
 .brand {
   margin-right: auto;
   display: block;
+
+  // Fix rendering on backdrop
+  position: relative;
+  z-index: 1;
 }
 
 .logo {

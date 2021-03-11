@@ -1,5 +1,5 @@
 <template>
-  <a class="nav-list-item" href="/">
+  <a class="nav-item" href="/">
     <slot></slot>
   </a>
 </template>
@@ -13,9 +13,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@use '~@/scss/variables' as vars;
+@use '~@/scss/breakpoints' as bp;
 
-.nav-list-item {
+.nav-item {
   margin-left: 32px;
   line-height: 1em;
   text-decoration: none;
@@ -26,6 +26,18 @@ export default defineComponent({
   &:active,
   &:visited {
     text-decoration: underline;
+  }
+
+  @include bp.breakpoint-mobile {
+    margin: 0;
+    padding: 26.5px 24px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: black;
+
+    &:not(:last-child) {
+      border-bottom: solid 1px #f2f2f2;
+    }
   }
 }
 
