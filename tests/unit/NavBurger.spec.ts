@@ -1,7 +1,7 @@
 import { shallowMount } from '@vue/test-utils';
 import NavBurger from '@/components/NavBurger.vue';
 
-describe('NavbarBurger.vue', () => {
+describe('NavBurger.vue', () => {
   it('should be initially non-active state', () => {
     const wrapper = shallowMount(NavBurger);
     expect(wrapper.classes('active')).toBeFalsy();
