@@ -1,8 +1,8 @@
 <template>
-  <button type="button" class="navbar-burger" :class="{ active }" @click="toggle">
-    <figure class="navbar-burger-line" role="presentation"></figure>
-    <figure class="navbar-burger-line" role="presentation"></figure>
-    <figure class="navbar-burger-line" role="presentation"></figure>
+  <button type="button" class="nav-burger" :class="{ active }" @click="toggle">
+    <figure class="nav-burger-line" role="presentation"></figure>
+    <figure class="nav-burger-line" role="presentation"></figure>
+    <figure class="nav-burger-line" role="presentation"></figure>
   </button>
 </template>
 
@@ -10,7 +10,7 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'NavbarBurger',
+  name: 'NavBurger',
   data() {
     return {
       active: false,
@@ -25,17 +25,20 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.navbar-burger {
-  margin: 0;
+.nav-burger {
   padding: 0;
   background: transparent;
   outline: none;
   border: none;
+  display: block;
   cursor: pointer;
+
+  // Fix button spacing
+  margin-bottom: -1px;
 }
 
-.navbar-burger-line {
-  margin: 3px;
+.nav-burger-line {
+  margin: 3px 0;
   background-color: white;
   display: block;
   width: 16px;

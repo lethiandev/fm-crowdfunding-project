@@ -1,27 +1,21 @@
 <template>
-  <NavbarList>
-    <NavbarListItem>
-      <a href="#">About</a>
-    </NavbarListItem>
-    <NavbarListItem>
-      <a href="#">Discover</a>
-    </NavbarListItem>
-    <NavbarListItem>
-      <a href="#">Started</a>
-    </NavbarListItem>
-  </NavbarList>
+  <NavList>
+    <NavListItem>About</NavListItem>
+    <NavListItem>Discover</NavListItem>
+    <NavListItem>Started</NavListItem>
+  </NavList>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import NavbarList from './NavbarList.vue';
-import NavbarListItem from './NavbarListItem.vue';
+import NavList from './NavList.vue';
+import NavListItem from './NavListItem.vue';
 
 export default defineComponent({
   name: 'TheNavigation',
   components: {
-    NavbarList,
-    NavbarListItem,
+    NavList,
+    NavListItem,
   },
 });
 </script>
