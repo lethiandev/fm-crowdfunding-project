@@ -21,7 +21,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@use '~@/scss/variables' as vars;
+@use '~@/scss/breakpoints' as bp;
 
 .header {
   margin-bottom: -120px;
@@ -30,7 +30,7 @@ export default defineComponent({
   background-size: cover;
   min-height: 400px;
 
-  @media (max-width: vars.$breakpoint-mobile) {
+  @include bp.breakpoint-mobile {
     margin-bottom: -84px;
     background-image: url('~@/assets/image-hero-mobile.jpg');
     min-height: 300px;

@@ -1,0 +1,7 @@
+@use './variables' as vars;
+
+@mixin breakpoint-mobile {
+  @media screen and (max-width: vars.$breakpoint-mobile) {
+    @content
+  }
+}

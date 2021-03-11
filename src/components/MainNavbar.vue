@@ -18,14 +18,14 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@use '~@/scss/variables' as vars;
+@use '~@/scss/breakpoints' as bp;
 
 .navbar {
   padding: 48px 0;
   background-image: linear-gradient(
     to bottom, rgba(0,0,0,.5), transparent );
 
-  @media (max-width: vars.$breakpoint-mobile) {
+  @include bp.breakpoint-mobile {
     padding: 32px 0;
   }
 }
