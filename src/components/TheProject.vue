@@ -1,27 +1,31 @@
 <template>
-  <img class="project-logo" src="~@/assets/logo-mastercraft.svg" alt="Mastercraft logo" />
-  <section class="section">
-    <br /><br /><br /><br /><br /><br />
-  </section>
-  <section class="section">
-  </section>
+  <div class="project">
+    <ProjectBrand />
+    <ProjectHeading />
+    <ProjectStatus />
+    <ProjectAbout />
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import ProjectBrand from '@/components/ProjectBrand.vue';
+import ProjectHeading from '@/components/ProjectHeading.vue';
+import ProjectStatus from '@/components/ProjectStatus.vue';
+import ProjectAbout from '@/components/ProjectAbout.vue';
 
 export default defineComponent({
   name: 'TheProject',
+  components: {
+    ProjectAbout,
+    ProjectBrand,
+    ProjectHeading,
+    ProjectStatus,
+  },
 });
 </script>
 
 <style lang="scss" scoped>
-.project-logo {
-  margin: 0 auto -28px auto;
-  display: block;
-  width: 56px;
-  height: 56px;
-}
 
 .section {
   padding: 46px;
