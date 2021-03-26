@@ -26,7 +26,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .status-item {
   padding-left: percentage(46 / 636);
-  padding-right: percentage(46 / 636);
+  padding-right: percentage(16 / 636);
   flex: 1 1 auto;
   width: 100%;
 
