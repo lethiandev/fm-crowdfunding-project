@@ -8,6 +8,7 @@
     </div>
   </section>
 </template>
+
 <script lang="ts">
 import BaseButton from '@/components/BaseButton.vue';
 import BaseButtonIcon from '@/components/BaseButtonIcon.vue';
@@ -24,3 +25,19 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+h1 {
+  margin: 0 0 26px 0;
+  text-align: center;
+  line-height: 1;
+  font-size: 2em;
+}
+
+p {
+  margin: 0 0 42px 0;
+  text-align: center;
+  font-size: 0.95em;
+  color: hsl(0, 0%, 48%);
+}
+</style>
