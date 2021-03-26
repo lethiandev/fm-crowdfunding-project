@@ -1,4 +1,4 @@
-# Frontend Mentor - Crowdfunding Project Page
+# Frontend Mentor - Crowdfunding product page
 
 This project is a Frontend Mentor challenge coded entirely for practising purpose. The challenge was to build crowdfunding product page and to make the solution as close to the design as possible, with responsive layout to support mobile devices.
 
