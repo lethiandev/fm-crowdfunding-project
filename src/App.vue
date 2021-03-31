@@ -1,26 +1,15 @@
 <template>
-  <TheHeading />
-  <main class="main">
-    <div class="container">
-      <TheProject />
-    </div>
-  </main>
+  <ProjectPage />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import IconBookmark from './assets/icon-bookmark.svg';
-import TheHeading from './components/TheHeading.vue';
-import TheProject from './components/TheProject.vue';
+import ProjectPage from './pages/ProjectPage.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    TheHeading,
-    TheProject,
-  },
-  computed: {
-    IconBookmark: () => IconBookmark,
+    ProjectPage,
   },
 });
 </script>
