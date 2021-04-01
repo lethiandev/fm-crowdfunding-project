@@ -1,7 +1,7 @@
 <template>
   <div class="page-project">
     <TheHeading />
-      <main class="main">
+    <main class="main">
       <div class="container">
         <TheProject />
       </div>
