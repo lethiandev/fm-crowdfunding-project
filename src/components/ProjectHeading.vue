@@ -40,4 +40,9 @@ p {
   font-size: 0.95em;
   color: hsl(0, 0%, 48%);
 }
+
+.button-list {
+  display: flex;
+  justify-content: space-between;
+}
 </style>
